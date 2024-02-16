@@ -90,7 +90,7 @@ jobs:
       - uses: azure/webapps-deploy@v2
         with:
           app-name: 'r7qyusdgkjsiompnpreg-dev'
-          images: {your_registry_name}.azurecr.io/techboost/dotnetcoreapp:${{github.run_number}}
+          images: r7qyusdgkjsiompnpreg.azurecr.io/techboost/dotnetcoreapp:${{github.run_number}}
 
   deploy-to-test:
   
@@ -111,7 +111,7 @@ jobs:
     - uses: azure/webapps-deploy@v2
       with:
         app-name: 'r7qyusdgkjsiompnpreg-test'
-        images: {your_registry_name}.azurecr.io/techboost/dotnetcoreapp:${{github.run_number}}
+        images: r7qyusdgkjsiompnpreg.azurecr.io/techboost/dotnetcoreapp:${{github.run_number}}
 
   deploy-to-prod:
   
@@ -132,4 +132,4 @@ jobs:
     - uses: azure/webapps-deploy@v2
       with:
         app-name: 'r7qyusdgkjsiompnpreg-prod'
-        images: {your_registry_name}.azurecr.io/techboost/dotnetcoreapp:${{github.run_number}}
+        images: r7qyusdgkjsiompnpreg.azurecr.io/techboost/dotnetcoreapp:${{github.run_number}}
